@@ -1,0 +1,70 @@
+*{
+    padding:0;
+    margin: 0;
+    
+}
+body{
+    background:url("black1.jpg");
+    background-position:center;
+    box-sizing: border-box; 
+}
+
+.Top-menu{
+    background-color: rgb(151, 197, 60);
+    text-align: center;
+}
+.Top-menu header{
+    font-size: 30px;
+    user-select: none;
+}
+.Top-menu ul{
+    display: inline-flex; /*this means your menu text align in centre*/
+    list-style: none;
+    color: #fff;
+
+}
+.Top-menu ul li{
+    width: 80px;
+    margin: 15px;
+    padding: 10px;
+}
+.Top-menu ul li a
+{
+    text-decoration: none;
+    color: white;
+}
+.active, .Top-menu ul li:hover{
+    background:rgb(149, 221, 4);
+    border-radius: 4px;
+}
+.Top-menu .fa{/*we use this for space between icon and text*/
+    margin-right: 7px; 
+}
+
+.submenu-1{
+    display: none;
+}
+.Top-menu ul li:hover .submenu-1{
+    display:block;
+    position: absolute;
+    background: rgb(151, 197, 60);
+    margin-top: 10px;
+    margin-left: -15px;
+}
+.Top-menu ul li:hover .submenu-1 ul{
+    display: block; /*block helps to sub menu inline in vertically*/
+    margin: 10px;
+}
+.Top-menu ul li:hover .submenu-1 ul li{
+    width: 50px;
+    padding:5px;
+    border-bottom: 2px double #fff;
+    background:transparent;
+    text-align: left;
+}
+.Top-menu ul li:hover .submenu-1 ul li:last-child{
+    border-bottom: none;
+}
+.Top-menu ul li:hover .submenu-1 ul li a:hover{
+    color:yellow
+}
